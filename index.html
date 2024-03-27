@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speech To Text App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Welcome to Speech To Text App</h1>
+    <button id="startButton" class="speak-button">
+      Start Speech Recognition
+    </button>
+
+    <div class="speech-container">
+      <textarea
+        id="transcription"
+        class="animated-text"
+        placeholder="Spoken text will appear here..."
+      ></textarea>
+      <button id="stopButton" class="stop-button">Stop</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url("bgimage.jpg"); /* Add background image */
+  background-size: cover; /* Make sure the image covers the entire background */
+  font-family: "Roboto", sans-serif;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Your existing CSS rules... */
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #333; /* Darker text for better legibility */
+}
+
+.speech-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff; /* White background for a clean form area */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+textarea {
+  height: 250px;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 1rem;
+  resize: vertical;
+  outline: none; /* Remove default outline for focus */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Smooth transition for opacity and transform */
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase; /* Convert text to uppercase for emphasis */
+}
+
+.speak-button {
+  background-color: #008cba; /* Blue background color */
+}
+
+.stop-button {
+  background-color: #f44336; /* Red background color */
+}
+
+.speak-button:hover {
+  background-color: #005a72; /* Darker shade of blue */
+}
+
+.stop-button:hover {
+  background-color: #d32f2f; /* Darker shade of red */
+}
+
+.animated-text {
+  animation: slideIn 0.5s forwards; /* Slide in animation */
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
